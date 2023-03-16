@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quiz Hero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js" defer></script>
+
+    <!-- You don't need to change noChange.js file. It's fine -->
+    <script src="./noChange.js" defer></script>
+    <!-- You don't need to change noChange.js file. It's fine -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        common: ["Rubik", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
 </head>
-<body>
-    
+
+<body class="bg-white font-common">
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+            <div class="text-zinc-800 font-bold uppercase">
+                <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+                <p class="text-[10px] font-normal capitalize -mt-1">
+                    Get ready to Quiz and be amazed!
+                </p>
+            </div>
+            <a href="index.html"> <button class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">Quiz
+                    Test</button></a>
+        </nav>
+    </header>
+    <!-- Header/Navbar section end -->
+
+    <!-- Extra Question section Start -->
+    <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto">
+        <div class="max-w-xl mx-auto mb-8">
+            <h3 class="font-bold underline text-2xl mt-5 text-center">Questons:</h3>
+        </div>
+        <div class="mt-8 mb-8">
+            <h3 class="font-bold">1. Difference between map, filter, forEach and find .</h3>
+            <p class="ml-8 mt-4">In JavaScript, map, filter, forEach, and find are all methods used to manipulate arrays.</p>
+            <p class="ml-8 mt-4"><span class="font-bold underline">Map: </span> The map method creates a new array with the result of calling a given function on each element of the original array. It does not change the original array.</p>
+            <p class="ml-8 mt-4"><span class="font-bold underline">Filter: </span>The filter method creates a new array with all elements that pass the test implemented by the given function. It does not change the original array.</p>
+            <p class="ml-8 mt-4"><span class="font-bold underline">forEach: </span>The forEach method executes the given function once for each array element. It doesn't create a new array and doesn't return anything.</p>
+            <p class="ml-8 mt-4"><span class="font-bold underline">find: </span>The find method returns the value of the first element of the array that satisfies the given function. It does not create a new array.</p>
+        </div>
+        <div class="mt-8 mb-8">
+            <h3 class="font-bold">2. Difference between Local Storage, Session Storage and Cookies .</h3>
+            <p class="ml-8 mt-4">In web development, local storage, session storage, and cookies are all mechanisms for storing data on the client-side.</p>
+            <p class="ml-8 mt-4"><span class="font-bold underline">localStorage: </span> The LocalStorage API allows you to store key-value pairs in the browser's local storage. Data persists even when the user closes their browser or restarts their computer. localStorage is specific to each domain, meaning that data stored in local storage by one website cannot be accessed by another website.</p>
+            <p class="ml-8 mt-4"><span class="font-bold underline">sessionStorage: </span>The SessionStorage API is similar to LocalStorage, but data is only stored for the duration of the session. Data is lost when the user closes their browser or tab. Session storage is specific to each domain.</p>
+            <p class="ml-8 mt-4"><span class="font-bold underline">cookies: </span>Cookies are small text files that are stored on the user's computer by the browser. Cookies may be used to store data such as user preferences, login information, and shopping cart contents. Unlike local storage and session storage, cookies are sent to the server with each request, allowing the server to read the data.</p>
+        </div>
+        <div class="mt-8 mb-8">
+            <h3 class="font-bold">3. What is the event loop? how does it work?</h3>
+            <p class="ml-8 mt-4">JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks. This model is quite different from models in other languages like C and Java.</p>
+            <p class="ml-8 mt-4">The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from the Task Queue to the Call Stack. Once the Stack is clear, the event loop triggers and checks the Task Queue for available callbacks. If there are any, it pushes it to the Call Stack, waits for the Call Stack to be clear again, and repeats the same process.</p>
+        </div>
+    </section>
+    <!-- Extra Question section End -->
+   
+    <!-- Footer section start -->
+    <footer class="py-10 text-center text-sm">
+        Copyright © 2023 Quiz Hero All Rights Reserved.
+    </footer>
+    <!-- Footer section end -->
 </body>
+
 </html>
