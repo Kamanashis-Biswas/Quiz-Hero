@@ -51,29 +51,45 @@
 
     <!-- Extra Question section Start -->
     <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto">
-        <div class="max-w-xl mx-auto mb-8">
-            <h3 class="font-bold underline text-2xl mt-5 text-center">Questons:</h3>
+        <div>
+            <div class="max-w-xl mx-auto mb-8">
+                <h3 class="font-bold underline text-2xl mt-5 text-center">Questons:</h3>
+            </div>
+            <div class="mt-8 mb-8">
+                <h3 class="font-bold">1. Difference between map, filter, forEach and find .</h3>
+                <p class="ml-8 mt-4">In JavaScript, map, filter, forEach, and find are all methods used to manipulate arrays.</p>
+                <p class="ml-8 mt-4"><span class="font-bold underline">Map: </span> The map method creates a new array with the result of calling a given function on each element of the original array. It does not change the original array.</p>
+                <p class="ml-8 mt-4"><span class="font-bold underline">Filter: </span>The filter method creates a new array with all elements that pass the test implemented by the given function. It does not change the original array.</p>
+                <p class="ml-8 mt-4"><span class="font-bold underline">forEach: </span>The forEach method executes the given function once for each array element. It doesn't create a new array and doesn't return anything.</p>
+                <p class="ml-8 mt-4"><span class="font-bold underline">find: </span>The find method returns the value of the first element of the array that satisfies the given function. It does not create a new array.</p>
+            </div>
+            <div class="mt-8 mb-8">
+                <h3 class="font-bold">2. Difference between Local Storage, Session Storage and Cookies .</h3>
+                <p class="ml-8 mt-4">In web development, local storage, session storage, and cookies are all mechanisms for storing data on the client-side.</p>
+                <p class="ml-8 mt-4"><span class="font-bold underline">localStorage: </span> The LocalStorage API allows you to store key-value pairs in the browser's local storage. Data persists even when the user closes their browser or restarts their computer. localStorage is specific to each domain, meaning that data stored in local storage by one website cannot be accessed by another website.</p>
+                <p class="ml-8 mt-4"><span class="font-bold underline">sessionStorage: </span>The SessionStorage API is similar to LocalStorage, but data is only stored for the duration of the session. Data is lost when the user closes their browser or tab. Session storage is specific to each domain.</p>
+                <p class="ml-8 mt-4"><span class="font-bold underline">cookies: </span>Cookies are small text files that are stored on the user's computer by the browser. Cookies may be used to store data such as user preferences, login information, and shopping cart contents. Unlike local storage and session storage, cookies are sent to the server with each request, allowing the server to read the data.</p>
+            </div>
+            <div class="mt-8 mb-8">
+                <h3 class="font-bold">3. What is the event loop? how does it work?</h3>
+                <p class="ml-8 mt-4">JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks. This model is quite different from models in other languages like C and Java.</p>
+                <p class="ml-8 mt-4">The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from the Task Queue to the Call Stack. Once the Stack is clear, the event loop triggers and checks the Task Queue for available callbacks. If there are any, it pushes it to the Call Stack, waits for the Call Stack to be clear again, and repeats the same process.</p>
+            </div>
         </div>
-        <div class="mt-8 mb-8">
-            <h3 class="font-bold">1. Difference between map, filter, forEach and find .</h3>
-            <p class="ml-8 mt-4">In JavaScript, map, filter, forEach, and find are all methods used to manipulate arrays.</p>
-            <p class="ml-8 mt-4"><span class="font-bold underline">Map: </span> The map method creates a new array with the result of calling a given function on each element of the original array. It does not change the original array.</p>
-            <p class="ml-8 mt-4"><span class="font-bold underline">Filter: </span>The filter method creates a new array with all elements that pass the test implemented by the given function. It does not change the original array.</p>
-            <p class="ml-8 mt-4"><span class="font-bold underline">forEach: </span>The forEach method executes the given function once for each array element. It doesn't create a new array and doesn't return anything.</p>
-            <p class="ml-8 mt-4"><span class="font-bold underline">find: </span>The find method returns the value of the first element of the array that satisfies the given function. It does not create a new array.</p>
+        <div>
+            <div class="max-w-xl mx-auto mb-8">
+                <h3 class="font-bold underline text-2xl mt-5 text-center">Details of two function :</h3>
+            </div>
+            <div class="mt-8 mb-8">
+                <h3 class="font-bold">1. Details of quizTimer() function .</h3>
+                <p class="ml-8 mt-4">This function handles a quiz timer. It accepts two parameters. The first is a Boolean value that if set to true will stop the timer at the specified period and the second is a set interval that the quiz timer will set a message that counts down within the set interval and renders the count time in HTML. Minutes and mods are determined by dividing the count into minutes and seconds. Then formats the minutes and seconds as a string and renders that format to HTML. Also, the function changes the second color every 60 seconds and the second color is current.</p>
+            </div>
+            <div class="mt-8 mb-8">
+                <h3 class="font-bold">2. Details of chooseQuiz() function .</h3>
+                <p class="ml-8 mt-4">This function chooseQuiz accepts a quiz number and a replacement answer. Then this function finds an array identifier (id) from the given quiz number and the given answer to see if it is in the array or not. If it is, replaces the old answer with the new answer and updates it to the array. If it doesn't exist on the contrary, it creates a new object and adds the new quiz and the given answer to the array. Finally, after the function completes, another function returns the array with the answers to displayAnswers to display to the user.</p>
+            </div>
         </div>
-        <div class="mt-8 mb-8">
-            <h3 class="font-bold">2. Difference between Local Storage, Session Storage and Cookies .</h3>
-            <p class="ml-8 mt-4">In web development, local storage, session storage, and cookies are all mechanisms for storing data on the client-side.</p>
-            <p class="ml-8 mt-4"><span class="font-bold underline">localStorage: </span> The LocalStorage API allows you to store key-value pairs in the browser's local storage. Data persists even when the user closes their browser or restarts their computer. localStorage is specific to each domain, meaning that data stored in local storage by one website cannot be accessed by another website.</p>
-            <p class="ml-8 mt-4"><span class="font-bold underline">sessionStorage: </span>The SessionStorage API is similar to LocalStorage, but data is only stored for the duration of the session. Data is lost when the user closes their browser or tab. Session storage is specific to each domain.</p>
-            <p class="ml-8 mt-4"><span class="font-bold underline">cookies: </span>Cookies are small text files that are stored on the user's computer by the browser. Cookies may be used to store data such as user preferences, login information, and shopping cart contents. Unlike local storage and session storage, cookies are sent to the server with each request, allowing the server to read the data.</p>
-        </div>
-        <div class="mt-8 mb-8">
-            <h3 class="font-bold">3. What is the event loop? how does it work?</h3>
-            <p class="ml-8 mt-4">JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks. This model is quite different from models in other languages like C and Java.</p>
-            <p class="ml-8 mt-4">The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from the Task Queue to the Call Stack. Once the Stack is clear, the event loop triggers and checks the Task Queue for available callbacks. If there are any, it pushes it to the Call Stack, waits for the Call Stack to be clear again, and repeats the same process.</p>
-        </div>
+        
     </section>
     <!-- Extra Question section End -->
    
